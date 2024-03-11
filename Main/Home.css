@@ -2,9 +2,19 @@ body {
     background-color: black;
     width: 99vw;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-main, .why, .service, .awesome, .contact {
+body > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main, .why, .service, .awesome {
     /*border: solid 1px white;*/
     margin-left: 120px;
     margin-right: 120px;
@@ -25,6 +35,8 @@ header, .build {
 
 footer {
     /*border: solid 1px white;*/
+    width: 80%;
+    height: 190px;
     margin-left: 120px;
     margin-right: 120px;
     display: flex;
@@ -32,17 +44,25 @@ footer {
     justify-content: space-between;
 }
 
-main, .service, .awesome {
-    height: 100vh; /* 1024px */
+main, .awesome {
+    height: 1024px; /* 1024px */
+}
+
+.service {
+    margin-top: 150px;
+    height: 600px;
 }
 
 .contact {
     /*border: solid 1px white;*/
     height: 506px;
-}
-
-footer {
-    height: 190px;
+    width: 1200px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 header {
@@ -70,6 +90,7 @@ main > div{
 
 .griddd {
     width: 1200px;
+    height: 530px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr 2fr;
@@ -94,13 +115,6 @@ main > div{
     justify-content: space-between;
     /*border: solid 1px white;*/
     margin-top: 160px;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 .bott {
